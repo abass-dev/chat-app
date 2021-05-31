@@ -5,10 +5,10 @@ This ChatApp/web application is proposed to beginners in order to learn the back
 
 # Required tools
 
-1, PHP, MySQL
-2, Composer
-3, NodeJs 
-4, Sass
+1.PHP, MySQL<br />
+2.Composer<br />
+3.NodeJs<br />
+4.Sass<br />
 
 # Usage
 
@@ -17,5 +17,5 @@ This ChatApp/web application is proposed to beginners in order to learn the back
 
 # Test Commande
 
-1, <kbd>yarn start-server</kbd> to run php local server, then open the flowing address <a href="http://localhost:8000">http://localhost:8000</a>
-2, <kbd>yarn start-sass</kbd> to run/compile Sass folders
+1.<kbd>yarn start-server</kbd> to run php local server, then open the flowing address <a href="http://localhost:8000">http://localhost:8000</a>
+2.<kbd>yarn start-sass</kbd> to run/compile Sass folders
