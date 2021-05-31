@@ -1,0 +1,19 @@
+{
+    "name": "abass/chatapp",
+    "description": "chatapp",
+    "authors": [
+        {
+            "name": "todaysdev",
+            "email": "todaysdevs@gmail.com"
+        }
+    ],
+      "autoload": {
+        "psr-4": {
+          "App\\": "src/"
+        }
+      },
+      
+    "require": {
+
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "Ce projet/application web est proposé aux débutants afin de bien se former au back-end et au front-end avant de passer à un framework ou une librairie",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "php -S localhost:8000 -t public",
+    "start-sass": "sass --watch sass/style.scss:public/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abass-bencheik/chat-app.git"
+  },
+  "author": "abass ben cheik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abass-bencheik/chat-app/issues"
+  },
+  "homepage": "https://github.com/abass-bencheik/chat-app#readme"
+}
