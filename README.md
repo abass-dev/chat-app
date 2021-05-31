@@ -1,8 +1,7 @@
 # Chat App
 This ChatApp/web application is proposed to beginners in order to learn the back-end and front-end before moving on to a framework or a library.
 # Projet statut
-
-Still on developing
+<h4>Still in development</h4>
 
 # Required tools
 
