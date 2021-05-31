@@ -2,6 +2,7 @@
 This ChatApp/web application is proposed to beginners in order to learn the back-end and front-end before moving on to a framework or a library.
 # Projet statut
 <h4>Still in development</h4>
+<h4>Maintainer <a href="https://m.facebook.com/abasscheik.ben">Abass Ben Cheik</a></h4>
 
 # Required tools
 
@@ -20,21 +21,23 @@ This ChatApp/web application is proposed to beginners in order to learn the back
 6.<h3>Database configuration</h3><br />
 </p>
 <p>Config the database into... <strong>src/Config/DB.php</strong> class<br />
-<strong>Example of configuration:</strong><be />
+<strong>Example of configuration:</strong><br />
 
-namespace App\Config;
-use App\Config\DBConfig;
+namespace App\Config;<br />
+use App\Config\DBConfig;<br />
 
-class DB extends DBConfig
+class DB extends DBConfig<br />
 {
-  public  function __construct()
+  public  function __construct()<br />
   {
-    parent::__construct("db_username", "db_name", "db_password");
+    parent::__construct("db_username", "db_name", "db_password");<br />
     
-  }
-  
+ }
 }
 </p>
 
 
-# Installation and contribution
+# Become a contributor ?
+<p>It's simple, just fork the project and propose us your changes.
+Thanks in advance 😊
+</p>
