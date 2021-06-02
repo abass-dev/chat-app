@@ -1,17 +1,15 @@
 /* Reste 
-
+ 
  Box sizing rules */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /* Remove default padding */
 ul[class],
 ol[class] {
-  padding: 0;
-}
+  padding: 0; }
 
 /* Remove default margin */
 h1,
@@ -28,12 +26,10 @@ blockquote,
 dl,
 dd {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 /* Set core body defaults */
 body {
@@ -41,42 +37,35 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 html, body {
-  scroll-behavior: smooth !important;
-}
+  scroll-behavior: smooth !important; }
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul[class],
 ol[class] {
-  list-style: none;
-}
+  list-style: none; }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
+  text-decoration-skip-ink: auto; }
 
 /* Make images easier to work with */
 img {
   max-width: 100%;
-  display: block;
-}
+  display: block; }
 
 /* Natural flow and rhythm in articles by default */
 article > * + * {
-  margin-top: 1em;
-}
+  margin-top: 1em; }
 
 /* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
 select {
-  font: inherit;
-}
+  font: inherit; }
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
@@ -84,9 +73,7 @@ select {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
+    scroll-behavior: auto !important; } }
 /* Main App */
 .app {
   width: 100%;
@@ -95,35 +82,28 @@ select {
   flex-wrap: wrap;
   padding: 0;
   margin: 0 auto;
-  font-family: Courier;
-}
-.app input, .app button {
-  padding: 10px 5px;
-  border-radius: 5px;
-  outline: none;
-  min-width: 300px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.app .app-title {
-  text-align: center;
-  color: #555;
-}
-.app .login-form h3 {
-  color: #94adff;
-}
-.app .input-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-.app .btn-submit {
-  background: #94adff;
-  color: #fff;
-  font-size: 18px;
-  outline: none;
-}
-.app .btn-submit:hover {
-  background: #5f84ff;
-}
+  font-family: Courier; }
+  .app input, .app button {
+    padding: 10px 5px;
+    border-radius: 5px;
+    outline: none;
+    min-width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+  .app .app-title {
+    text-align: center;
+    color: #555; }
+  .app .login-form h3 {
+    color: #94adff; }
+  .app .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; }
+  .app .btn-submit {
+    background: #94adff;
+    color: #fff;
+    font-size: 18px;
+    outline: none; }
+  .app .btn-submit:hover {
+    background: #5f84ff; }
 
 /*# sourceMappingURL=style.css.map */

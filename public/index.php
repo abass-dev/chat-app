@@ -1,26 +1,8 @@
 <?php
 
-$path = dirname(__DIR__);
-$separator = DIRECTORY_SEPARATOR;
-
+use App\Config\DBConfig;
  // Import auto loader of composer
-require $path.$separator."vendor".$separator."autoload.php";
-
-use App\Repo\UsersRepo;
-
- /**
-  * Overwrite the database configuration
-  * For more information on this subject, see the src/Config/DB.php class
-  */
- $devDbConfig = $path.$separator."src".$separator."Config".$separator."DB.php";
- $dbConfigTextFile = $path.$separator."docs".$separator."dbConfig.txt";
-
-/* Create a new Class DB.php if doesn't exist */
-if (!file_exists($devDbConfig)) {
-   file_put_contents($devDbConfig, file_get_contents($dbConfigTextFile));
-} else {
-  $db = new UsersRepo();
-}
+require dirname(__DIR__)."/vendor/autoload.php";
 
 ?>
 

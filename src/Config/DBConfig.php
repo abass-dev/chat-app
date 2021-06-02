@@ -2,42 +2,44 @@
 
 namespace App\Config;
 
+use Dotenv\Dotenv;
 /**
  * Connection to the database
  */
 class DBConfig
 {
-  public $host;
-  private $user;
-  private $dbname;
-  private $password;
-  private $query;
-  private $conn = null;
-  
-  /**
-   * 
-   */
-  public function __construct(string $user, string $dbname, ?string $password = null)
-  {
-    $this->host = "127.0.0.1";
-    $this->user = $user;
-    $this->dbname = $dbname;
-    $this->password = $password;
+  public static function DBConn() {
     
-  }
-  
-  public function dBConn() {
+    /**
+     * PHPDotenv required .env directory 
+     */
+    $envdir = dirname(dirname(__DIR__));
+
+    /**
+     * If the configuration file exists we try to connect to the database
+     * If it does not exist an exception of type PDOException will be thrown
+     */
+    if (file_exists($envdir."/.env")) {
     
+      $dotenv  = Dotenv::createImmutable(dirname(dirname(__DIR__)));
+      $dotenv->load();
+
+      $host = $_ENV["DB_HOST"];
+      $user = $_ENV["DB_USER"];
+      $dbname = $_ENV["DB_NAME"];
+      $password = $_ENV["DB_PASSWORD"];
     try {
-      $cdn = "mysql:host=".$this->host.";dbname=".$this->dbname; 
-      $this->conn = new \PDO($cdn, $this->user, $this->password, [
-        \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION
+      $cdn = "mysql:host=".$host.";dbname=".$dbname.";"; 
+      $conn = new \PDO($cdn, $user, $password, [
+        \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
+        \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC
         ]);
-    } catch (PDOException $e) {
-      echo $e->getMessage();
+    } catch (\PDOException $e) {
+      die($e->getMessage());
     }
     
-    return $this->conn;
+    return $conn;
   }
+}
   
 }
