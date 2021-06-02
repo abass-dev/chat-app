@@ -15,11 +15,11 @@ Clone the project: `git clone https://github.com/abass-bencheik/chat-app.git` <b
 `yarn start-sass` to run/compile Sass folders
 `yarn start-server` to run php local server, then open the flowing address [http://localhost:8000](http://localhost:8000) <br />
 You must config your database information. <br />
-Example of database configuration into `.env` <br />
+Example of database configuration into `.env` This file should not be committed, take a look at `.env.example` for more information.<br />
   
-DB_HOST=example-host
-DB_USER=example-dbuser
-DB_NAME=example-dbname
+DB_HOST=example-host<br />
+DB_USER=example-dbuser<br />
+DB_NAME=example-dbname<br />
 DB_PASSWORD=example-dbpassword
 
 # Become a contributor ?
