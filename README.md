@@ -19,11 +19,11 @@ This ChatApp/web application is proposed for beginners in order to learn the bac
 3. <kbd>composer update</kbd><br >
 4. <kbd>yarn start-sass</kbd> to run/compile Sass folders
 5. <kbd>yarn start-server</kbd> to run php local server, then open the flowing address <a href="http://localhost:8000">http://localhost:8000</a><br />
-6. <h3>Database configuration</h3><br />
+6. Database configuration<br />
 </p>
-<p>Copy the below database snippet into... <strong>src/Config/DB.php</strong> class<br />
+<p>Copy the below database snippet into... <strong>./src/Config/DB.php</strong> class<br />
 <strong>Example of satabase configuration:</strong><br />
-
+  
 namespace App\Config;<br />
 use App\Config\DBConfig;<br />
 
