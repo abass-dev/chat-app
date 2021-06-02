@@ -6,10 +6,11 @@ This ChatApp/web application is proposed for beginners in order to learn the bac
 
 # Required tools
 
-1. PHP, MySQL<br />
-2. Composer<br />
-3. NodeJs<br />
-4. Sass<br />
+1. PHP<br />
+2. MySQL
+3. Composer<br />
+4. NodeJs<br />
+5. Sass<br />
 
 # Basic Usage
 <p>
