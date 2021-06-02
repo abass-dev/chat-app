@@ -1,44 +1,28 @@
 # Chat App
 This ChatApp/web application is proposed for beginners in order to learn the back-end and front-end before moving on to a framework or a library.
-# Projet status
-<h4>Still in development</h4>
-<h4>Maintainer <a href="https://m.facebook.com/abasscheik.ben">Abass Ben Cheik</a></h4>
 
 # Required tools
-
-1. PHP<br />
-2. MySQL
-3. Composer<br />
-4. NodeJs<br />
-5. Sass<br />
+PHP <br />
+MySQL <br />
+Composer <br />
+NodeJs <br />
+Sass <br />
 
 # Basic Usage
-<p>
-1. Clone the project: <kbd>git clone https://github.com/abass-bencheik/chat-app.git</kbd><br />
-2. <kbd>cd chat-app</kbd><br />
-3. <kbd>composer update</kbd><br >
-4. <kbd>yarn start-sass</kbd> to run/compile Sass folders
-5. <kbd>yarn start-server</kbd> to run php local server, then open the flowing address <a href="http://localhost:8000">http://localhost:8000</a><br />
-6. Database configuration<br />
-</p>
-<p>Copy the below database snippet into... <strong>./src/Config/DB.php</strong> class<br />
-<strong>Example of satabase configuration:</strong><br />
+Clone the project: `git clone https://github.com/abass-bencheik/chat-app.git` <br />
+`cd chat-app` <br />
+`composer update`<br >
+`yarn start-sass` to run/compile Sass folders
+`yarn start-server` to run php local server, then open the flowing address [http://localhost:8000](http://localhost:8000) <br />
+You must config your database information. <br />
+Example of database configuration into `.env` <br />
   
-namespace App\Config;<br />
-use App\Config\DBConfig;<br />
-
-class DB extends DBConfig<br />
-{
-  public  function __construct()<br />
-  {
-    parent::__construct("db_username", "db_name", "db_password");<br />
-    
- }
-}
-</p>
-
+DB_HOST=example-host
+DB_USER=example-dbuser
+DB_NAME=example-dbname
+DB_PASSWORD=example-dbpassword
 
 # Become a contributor ?
-<p>It's simple, just fork the project and propose us your changes.
+It's simple, just fork the project and propose us your changes.
 Thanks in advance 😊
-</p>
+
