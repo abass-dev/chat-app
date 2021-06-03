@@ -5,12 +5,10 @@ use App\Config\DBConfig;
 require dirname(__DIR__)."/vendor/autoload.php";
 
 ?>
-
-<!-- Import header.php from template -->
 <?php require "../template/header.php" ?>
 
-<!-- Import main.php from template -->
-<?php require "../template/main.php" ?>
+ <!-- Import base template -->
+<?php require("../template/base.php") ?>
 
  <!-- Import footer.php from template -->
 <?php require "../template/footer.php" ?>

@@ -1,0 +1,42 @@
+/* Login */
+.login {
+  max-width: calc(500px + 50vh);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+  font-family: Courier;
+
+.form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 350px;
+  height: 70vh;
+}
+.form h3 {
+  color: #94adff;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.btn-submit {
+  background: #94adff;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+}
+.btn-submit:hover {
+  background:rgb(95,132,255);
+}
+}
