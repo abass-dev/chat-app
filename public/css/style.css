@@ -77,7 +77,33 @@ select {
 /* Main App */
 .app {
   background: linear-gradient(to bottom, #019486 50%, #555 50%);
-  height: 100vh; }
+  min-height: 100vh; }
+
+.app-title {
+  text-align: center;
+  color: #ffffff99;
+  font-family: Courier; }
+
+input, button, .btn-new-account {
+  padding: 10px 5px;
+  border-radius: 5px;
+  outline: none;
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+
+.new-account {
+  text-align: center;
+  padding-top: 10px; }
+  .new-account .btn-new-account {
+    background: #555;
+    color: #fff; }
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 350px; }
 
 .card-form {
   background: #fff;
@@ -85,13 +111,27 @@ select {
   border-radius: 5px;
   padding: calc(8px + 2vh);
   padding-bottom: calc(10px + 4vh); }
-  .card-form .forget-pass {
-    text-align: center; }
+  .card-form .forget-pass, .card-form .have-account {
+    text-align: center;
+    margin: 8px 0 8px 0; }
 
-.app-title {
-  text-align: center;
-  color: #ffffff99;
-  font-family: Courier; }
+.form h3 {
+  color: #94adff;
+  text-align: center; }
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px; }
+
+.btn-submit, .btn-register {
+  background: #019486;
+  color: #fff;
+  font-size: 18px;
+  outline: none; }
+
+.btn-submit:hover {
+  background: #5f84ff; }
 
 .or {
   position: relative;
@@ -116,20 +156,6 @@ select {
     height: 2px;
     background: linear-gradient(to right, #ffffff00, #555); }
 
-input, button, .btn-new-account {
-  padding: 10px 5px;
-  border-radius: 5px;
-  outline: none;
-  width: 300px;
-  border: 1px solid rgba(0, 0, 0, 0.1); }
-
-.new-account {
-  text-align: center;
-  padding-top: 10px; }
-  .new-account .btn-new-account {
-    background: #555;
-    color: #fff; }
-
 /* Login */
 .login {
   max-width: calc(500px + 50vh);
@@ -142,27 +168,18 @@ input, button, .btn-new-account {
   padding: 0;
   margin: 0 auto;
   font-family: Courier; }
-  .login .form {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 350px;
-    height: 70vh; }
-  .login .form h3 {
-    color: #94adff;
-    text-align: center; }
-  .login .input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px; }
-  .login .btn-submit {
-    background: #94adff;
-    color: #fff;
-    font-size: 18px;
-    outline: none; }
-  .login .btn-submit:hover {
-    background: #5f84ff; }
+
+/* Register template */
+.register {
+  max-width: calc(500px + 50vh);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+  font-family: Courier; }
 
 /*# sourceMappingURL=style.css.map */

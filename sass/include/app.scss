@@ -1,69 +1,11 @@
 /* Main App */
-
 .app {
   background: linear-gradient(to bottom, #019486 50%, #555 50%);
-  height: 100vh;
-}
-.card-form {
-  background: #fff;
-  box-shadow: 0 0 2px rgba(0,0,0,0.5);
-  border-radius: 5px;
-  padding: calc(8px + 2vh);
-  padding-bottom: calc(10px + 4vh);
-
- .forget-pass {
-  text-align: center;
-}
+  min-height: 100vh;
 }
 
 .app-title {
   text-align: center;
   color: #ffffff99;
   font-family: Courier;
-}
-
-.or {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  color: #555;
-
-&::before {
-  content: "";
-  position: absolute;
-  width: 45%;
-  top: 50%;
-  left: 0;
-  height: 2px;
-  background: linear-gradient(to left, #ffffff00, #555);
-  z-index: 1;
-  }
-  
-  &::after {
-  content: "";
-  position: absolute;
-  width: 45%;
-  top: 50%;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(to right, #ffffff00, #555);
-  }
-  
-}
- 
-  input, button, .btn-new-account{
-  padding: 10px 5px;
-  border-radius: 5px;
-  outline: none;
-  width: 300px;
-  border: 1px solid rgba(0,0,0,0.1);
-  
-}
-.new-account {
-  text-align: center;
-  padding-top: 10px;
-  .btn-new-account {
-    background: #555;
-    color: #fff;
-  }
 }

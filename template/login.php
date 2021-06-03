@@ -4,12 +4,12 @@
       <div class="form-login">
     <h3>LOGIN</h3><hr />
     <div class="input-group">
-      <label for="email">Email:</label>
-      <input placeholder="Your Email Address" type="email" name="email" id="email" />
+      <label for="loginemail">Email:</label>
+      <input placeholder="Your Email Address" type="email" name="loginemail" id="loginemail" />
     </div>
     <div class="input-group">
-      <label for="password">password:</label>
-      <input placeholder="Your Password" type="password" name="password" id="password" />
+      <label for="loginpassword">password:</label>
+      <input placeholder="Your Password" type="password" name="loginpass" id="loginppass" />
     </div>
     </div>
     <button name="login" class="btn-submit" type="submit">Log in</button>

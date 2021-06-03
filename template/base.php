@@ -2,6 +2,6 @@
   <div class="app">
     <h1 class="app-title">Chat App</h1>
    <!-- Import login.php from template -->
-   <?php require "login.php" ?>
+   <?php require "register.php" ?>
   </div>
 </div>

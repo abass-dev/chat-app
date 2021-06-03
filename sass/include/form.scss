@@ -1,0 +1,85 @@
+  input, button, .btn-new-account{
+  padding: 10px 5px;
+  border-radius: 5px;
+  outline: none;
+  width: 300px;
+  border: 1px solid rgba(0,0,0,0.1);
+  
+}
+.new-account {
+  text-align: center;
+  padding-top: 10px;
+  .btn-new-account {
+    background: #555;
+    color: #fff;
+  }
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+.card-form {
+  background: #fff;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  padding: calc(8px + 2vh);
+  padding-bottom: calc(10px + 4vh);
+
+ .forget-pass, .have-account {
+  text-align: center;
+  margin: 8px 0 8px 0;
+}
+}
+.form h3 {
+  color: #94adff;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.btn-submit, .btn-register{
+  background: #019486;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+}
+.btn-submit:hover {
+  background:rgb(95,132,255);
+}
+
+.or {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #555;
+
+&::before {
+  content: "";
+  position: absolute;
+  width: 45%;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(to left, #ffffff00, #555);
+  z-index: 1;
+  }
+  
+  &::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  top: 50%;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #ffffff00, #555);
+  }
+  
+}
+ 
