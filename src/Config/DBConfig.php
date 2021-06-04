@@ -28,7 +28,7 @@ class DBConfig
       $user = $_ENV["DB_USER"];
       $dbname = $_ENV["DB_NAME"];
       $password = $_ENV["DB_PASSWORD"];
-    try {
+ try {
       $cdn = "mysql:host=".$host.";dbname=".$dbname.";"; 
       $conn = new \PDO($cdn, $user, $password, [
         \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,

@@ -84,6 +84,11 @@ select {
   color: #ffffff99;
   font-family: Courier; }
 
+.login .errors {
+  color: red; }
+.login .errors-border {
+  border: 1px solid #ff0000; }
+
 input, button, .btn-new-account {
   padding: 10px 5px;
   border-radius: 5px;
