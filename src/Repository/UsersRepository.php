@@ -5,7 +5,7 @@ use App\Config\DBConfig;
 
 class UsersRepository extends DBConfig {
 
-  private $connSafeUser;
+  public $success = [];
   public $errors = [];
 
   public function findOneUser($user) {
@@ -18,7 +18,6 @@ class UsersRepository extends DBConfig {
         return $logAUser;
       } else {
         return $this->errors["errors"] = "ERRORS: invalid credentials";
-
       }
     }
   }

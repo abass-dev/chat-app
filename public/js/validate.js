@@ -20,8 +20,7 @@ function validLogin() {
     }
     
     
-    
-    if (validPass.value == "" || validPass.value.length <= 5) {
+    if (validPass.value == "" || validPass.value.length <= 3) {
       passErrors.textContent = "ERROR: Incorrect password";
       loginPass.classList.add("errors-border");
       passErrors.classList.add("errors");

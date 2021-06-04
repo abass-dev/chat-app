@@ -3,11 +3,17 @@
     <div class="card-form">
       <div class="form-login">
     <h3>LOGIN</h3><hr />
+      <?php if(isset($authUser->userRepo->errors["errors"])){ ?>
     <div style="color:red" class="errors">
-      <?php if(isset($userRepo->errors["errors"])){ ?>
-     <?php echo $userRepo->errors["errors"]?>
-    <?php } ?>
+     <?php echo $authUser->userRepo->errors["errors"]?>
     </div>
+    <?php } ?>
+    
+      <?php if(isset($authUser->userRepo->success["success"])){ ?>
+    <div style="color:#13b624;" class="success">
+     <?php echo $authUser->userRepo->success["success"]?>
+    </div>
+    <?php } ?>
     <div class="input-group">
       <label class="email-errors" for="loginEmail">Email:</label>
       <input placeholder="Your Email Address" type="email" name="loginEmail" id="loginEmail" />
