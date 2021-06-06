@@ -6,6 +6,8 @@
   "scripts": {
     "start-server": "php -S localhost:8000 -t public",
     "start-sass": "sass --watch sass/style.scss:public/build/style.css",
+    "build": "npx webpack",
+    "build-watch": "npx webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

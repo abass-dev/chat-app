@@ -1,6 +1,7 @@
 let path = require("path");
 let webpack = require("webpack");
 module.exports = {
+  mode: "development",
   entry: [
     path.join(__dirname, "assets/main.js")
     ],
