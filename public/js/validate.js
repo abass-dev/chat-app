@@ -14,7 +14,7 @@ function validLogin() {
     if (atpos < 1 || ( dotpos - atpos < 2 )) {
       emailErrors.textContent = "ERROR: Email Invalid";
       loginEmail.classList.add("errors-border");
-      emailErrors.classList.add("errors");
+      emailErrors.classList.add("errors-color");
       validEmail.focus() ;
       return false;
     }
@@ -23,7 +23,7 @@ function validLogin() {
     if (validPass.value == "" || validPass.value.length <= 3) {
       passErrors.textContent = "ERROR: Incorrect password";
       loginPass.classList.add("errors-border");
-      passErrors.classList.add("errors");
+      passErrors.classList.add("errors-color");
       validPass.focus();
       return false;
       

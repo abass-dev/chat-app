@@ -5,8 +5,13 @@
 require dirname(__DIR__)."/vendor/autoload.php";
 
 $authUser = new UsersOAuth();
+
 if ($authUser->isSafeUser("login")) {
-  $authUser->isSafe();
+  $authUser->isSafeLogin();
+}
+
+if ($authUser->isSafeUser("register")) {
+   $authUser->isSafeRegister();
 }
 
 ?>

@@ -4,13 +4,13 @@
       <div class="form-login">
     <h3>LOGIN</h3><hr />
       <?php if(isset($authUser->userRepo->errors["errors"])){ ?>
-    <div style="color:red" class="errors">
+    <div class="errors-color">
      <?php echo $authUser->userRepo->errors["errors"]?>
     </div>
     <?php } ?>
     
       <?php if(isset($authUser->userRepo->success["success"])){ ?>
-    <div style="color:#13b624;" class="success">
+    <div class="success">
      <?php echo $authUser->userRepo->success["success"]?>
     </div>
     <?php } ?>

@@ -1,8 +1,12 @@
-.login {
-  .errors {
+ .errors {
     color: red;
+    border: 1px solid #ff0000;
   }
   .errors-border {
     border: 1px solid #ff0000;
   }
-}
+  
+  .errors-color {
+    color: #ff0000;
+    font-weight: bold;
+  }

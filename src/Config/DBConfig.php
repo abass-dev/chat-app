@@ -35,7 +35,7 @@ class DBConfig
         \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC
         ]);
     } catch (\PDOException $e) {
-      die($e->getMessage());
+      die("<div style='color:red;text-align:center;'><br />OOPS THERE IS A PROBLEM! <br /> <br /> PLEASE CHECK YOUR DATABASE CONFIGURATION INTO <kbd>.ENV</kbd> FILE.</div>");
     }
     
     return $conn;
