@@ -2,3 +2,4 @@
 /src/Config/DB.php
 /.env
 /.sass-cache/
+/public/css
