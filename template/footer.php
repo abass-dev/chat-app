@@ -1,6 +1,5 @@
     <!-- Custom JS file -->
-   <script src="js/index.js"></script>
-    <script src="js/request.js"></script>
-   
+    </script>
+   <script src="./build/bundle.js"></script>
   </body>
 </html>

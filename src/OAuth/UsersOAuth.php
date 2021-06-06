@@ -30,10 +30,9 @@ class UsersOAuth {
         $dbUser = $this->userRepo->findOneUser($loginEmail);
 
         if (isset($dbUser["email"]) && isset($dbUser["password"])) {
-          $dbUserEmail = $dbUser["email"];
-          $dbUserPass = $dbUser["password"];
-          if ($loginEmail === $dbUserEmail) {
-            if ($loginpass === $dbUserPass) {
+      
+          if ($loginEmail == $dbUser["email"]) {
+            if (password_verify($loginpass, $dbUser["password"])) {
               $this->userRepo->success["success"] = "Logged in successfully !";
               $this->pageLoader = true;
               

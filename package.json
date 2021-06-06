@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start-server": "php -S localhost:8000 -t public",
-    "start-sass": "sass --watch sass/style.scss:public/css/style.css",
+    "start-sass": "sass --watch sass/style.scss:public/build/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/abass-bencheik/chat-app/issues"
   },
-  "homepage": "https://github.com/abass-bencheik/chat-app#readme"
+  "homepage": "https://github.com/abass-bencheik/chat-app#readme",
+  "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
 }

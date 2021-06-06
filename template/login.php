@@ -28,7 +28,7 @@
     <a href="#">Forget password?</a>
     </div>
     <div class="or">OR</div>
-    <div class="new-account"><a href="#" class="btn-new-account">Create new account</a></div>
+    <div class="new-account"><a href="#" id="btnNewAccount" class="btn-new-account">Create new account</a></div>
   </div>
   </form>
 </div>

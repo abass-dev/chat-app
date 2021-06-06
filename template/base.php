@@ -4,10 +4,8 @@
      <div id="appCore">
        <?php
        
-       if(!isset($_SESSION["safeuseremail"])) {
-           require_once("login.php");
-          } 
-
+           require_once("register.php");
+       
        ?>
      </div>
  </div>

@@ -14,6 +14,13 @@ if ($authUser->isSafeUser("register")) {
    $authUser->isSafeRegister();
 }
 
+if (is_array($authUser->getErrors())) {
+    $errors = $authUser->getErrors();
+    
+} else if (is_array($authUser->getSuccess())) {
+    $success = $authUser->getSuccess();
+}
+
 ?>
 <?php require "../template/header.php" ?>
 

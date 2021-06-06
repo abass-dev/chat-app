@@ -3,3 +3,6 @@
 /.env
 /.sass-cache/
 /public/css
+/public/build/
+/node_modules/
+/package-lock.json
